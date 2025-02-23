@@ -1,6 +1,6 @@
 # GeForce NOW Anti-AFK (Shell Script)
 
-A simple shell script that sends an **F13** keypress every 5 minutes to **NVIDIA GeForce NOW** if the application is running. The script continuously checks if GeForce NOW is active and triggers the F13 key press accordingly. It uses AppleScript for that and changes the focus of windows.
+A simple shell script that sends an **F13** keypress every 5 minutes to **NVIDIA GeForce NOW** if the application is running. The script continuously checks if GeForce NOW is active and triggers the F13 key press accordingly. It uses AppleScript for that and changes the focus of windows. It remembers the last active application and switches back to that, after sending the keystroke.
 
 Enjoy getting your coffee and not disconnecting from Nvidia GeForceNow!
 
@@ -53,6 +53,11 @@ Enjoy getting your coffee and not disconnecting from Nvidia GeForceNow!
 - The script uses a simple **bash loop** that checks if **GeForce NOW** is running every 5 minutes.
 - If **GeForce NOW** is detected, it sends the **F13** key using **AppleScript** (via the `osascript` command).
 - If **GeForce NOW** is not running, it does nothing until the next check.
+
+## Disclaimer
+
+**Use at your own risk.**  
+This script is not officially supported by NVIDIA or any other organization. While it simply sends an F13 keypress, I cannot guarantee that running this script will not violate any terms of service or result in any form of penalty, including account suspension or banning. Use it with caution and ensure you are compliant with **GeForce NOW's terms of service**.
 
 ## License
 
